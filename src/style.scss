@@ -9,6 +9,26 @@
   --transition-value: 0.3s ease-in-out;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  transition: color var(--transition-value);
+}
+
+a:hover {
+  color: var(--accent-green);
+}
+
 body {
   position: relative;
   // display: flex;
@@ -21,14 +41,9 @@ body {
   color: #303437;
 }
 
-h1 {
-  font-family: var(--font-main);
-  font-size: 56px;
-  font-weight: 700;
-}
-
-p {
-  font-family: var(--font-headers);
-  font-size: 23px;
-  line-height: 28px;
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  box-sizing: content-box;
 }
