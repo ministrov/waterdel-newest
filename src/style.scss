@@ -1,5 +1,5 @@
 // Globals
 
-@import './styles/global/globals.scss';
-@import './styles/global/variables.scss';
-@import './styles/global/container.scss';
+@forward '../styles/global/globals.scss';
+@forward '../styles/global/variables.scss';
+@forward '../styles/global/container.scss';

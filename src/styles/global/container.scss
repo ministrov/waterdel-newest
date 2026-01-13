@@ -1,4 +1,4 @@
-@import './variables.scss';
+@forward './variables.scss';
 
 .container {
   max-width: $container-width;
