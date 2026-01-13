@@ -1,6 +1,6 @@
 :root {
   --primary-font: 'Geologica', sans-serif;
-  --secondary-font: 'Onest', sans-seriff;
+  --secondary-font: 'Onest', sans-serif;
   --accent-green: #c1fb68;
   --accent-blue: #0a4b88;
   --accent-light-blue: #9aeaf8;
@@ -69,4 +69,37 @@ body {
 
 .header__burger-wrapper {
   display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100%;
+  background: radial-gradient(119.77% 126.3% at 95.67% 0%, #1A6FBE 0%, #0A4B88 100%);
+  border-radius: 0 14px 14px 0;
+  padding: 25px;
+  transform: translateX(-100%);
+  pointer-events: none;
+  transition: transform var(--transition-value);
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 40px;
+  border-radius: 900px;
+  background: rgba(240, 243, 246, 0.07);
+}
+
+.mobile-menu__logo {
+  display: block;
+  max-width: 160px;
+  margin-bottom: 30px;
 }
