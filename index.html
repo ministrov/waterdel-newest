@@ -16,65 +16,130 @@
 
 <body class="page__body">
   <header class="page__header header">
-    <div id="mobile-menu-burger" class="header__burger-wrapper header-tablet__aside">
-      <div class="header__burger link-tool">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.66666 8H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          </path>
-          <path d="M2.66666 12H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-          <path d="M2.66666 4H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          </path>
-        </svg>
+    <div class="container">
+      <div class="header__content">
+        <div id="mobile-menu-burger" class="header__burger-wrapper header-tablet__aside">
+          <div class="header__burger link-tool">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.66666 8H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+              </path>
+              <path d="M2.66666 12H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M2.66666 4H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="header__logo">
+          <span class="custom-logo-link" rel="home" aria-current="page">
+            <img src="img/logo.webp" width="140" height="52" alt="WATER Delivery logo in focus">
+          </span>
+        </div>
+
+        <nav class="header__nav">
+          <ul id="menu-header-menu" class="header__menu">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Проблемы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Решения</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Как работает</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Оснащение</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Кому подходит</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Отзывы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__contacts header-tablet__aside">
+          <a href="tel:+74950031222" class="header-phone">
+            <span class="header-phone__icon link-tool">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                  d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+                </path>
+              </svg>
+            </span>
+            <span class="header-phone__value">+7 495 003 12 22</span>
+          </a>
+
+          <button class="header__btn btn btn--action">Заказать звонок</button>
+        </div>
       </div>
     </div>
 
-    <div class="header__logo">
-      <span class="custom-logo-link" rel="home" aria-current="page">
-        <img src="img/logo.webp" width="140" height="52" alt="WATER Delivery logo in focus">
-      </span>
-    </div>
-
-    <nav class="header__nav">
-      <ul id="menu-header-menu" class="header__menu">
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Проблемы</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Решения</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Как работает</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Оснащение</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Кому подходит</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Отзывы</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">FAQ</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="header__contacts header-tablet__aside">
-      <a href="tel:+74950031222" class="header-phone">
-        <span class="header-phone__icon link-tool">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
-              d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
-            </path>
-          </svg>
-        </span>
-        <span class="header-phone__value">+7 495 003 12 22</span>
+    <div id="mobile-menu" class="header__mobile-menu mobile-menu">
+      <div id="mobile-menu__close" class="mobile-menu__close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+          <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 1 1 11M1 1l10 10">
+          </path>
+        </svg>
+      </div>
+      <a href="/" class="mobile__logo">
+        logo image is needed to embeded
       </a>
-
-      <button class="header__btn btn btn--action">Заказать звонок</button>
+      <nav class="mobile__nav">
+        <ul id="menu-header-menu-1" class="mobile__menu">
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-8">
+            <a href="/#problems" aria-current="page">Проблемы</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-9">
+            <a href="/#solution" aria-current="page">Решения</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-10">
+            <a href="/#how-it-works" aria-current="page">Как работает</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-11">
+            <a href="/#components" aria-current="page">Оснащение</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-12">
+            <a href="/#for-whom" aria-current="page">Кому подходит</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-13">
+            <a href="/#reviews" aria-current="page">Отзывы</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-14">
+            <a href="/#faq" aria-current="page">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts mobile__contacts">
+        <a href="tel:+74950031222" class="header-phone">
+          <span class="header-phone__icon link-tool">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+              </path>
+            </svg>
+          </span>
+          <span class="header-phone__value">+7 495 003 12 22</span>
+        </a>
+        <button class="btn btn--white header__btn" data-modal="callback">Заказать звонок</button>
+      </div>
     </div>
+
+    <div class="header__progressbar progressbar"></div>
   </header>
 
   <main class="page__main">
