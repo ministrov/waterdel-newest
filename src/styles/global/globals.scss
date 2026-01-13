@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+html {
+  background-color: rebeccapurple;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  transition: color $transition-value;
+}
+
+a:hover {
+  color: $accent-green;
+}
+
+body {
+  position: relative;
+  // display: flex;
+  // place-items: center;
+  min-width: 320px;
+  margin: 0;
+  font-family: $primary-font;
+  font-size: 15px;
+  background-color: white;
+  color: #303437;
+}

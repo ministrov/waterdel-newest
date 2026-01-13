@@ -1,53 +1,5 @@
-:root {
-  --font-headers: 'Geologica', sans-serif;
-  --font-main: 'Onest', sans-serif;
-  --container-padding: 24px;
-  --container-width: 1400px;
-  --accent-green: #c1fb68;
-  --accent-blue: #0a4b88;
-  --accent-light-blue: #9aeaf8;
-  --transition-value: 0.3s ease-in-out;
-}
+// Globals
 
-html {
-  background-color: rebeccapurple;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-a {
-  transition: color var(--transition-value);
-}
-
-a:hover {
-  color: var(--accent-green);
-}
-
-body {
-  position: relative;
-  // display: flex;
-  // place-items: center;
-  min-width: 320px;
-  margin: 0;
-  font-family: var(--font-main);
-  font-size: 15px;
-  background-color: white;
-  color: #303437;
-}
-
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 var(--container-padding);
-  box-sizing: content-box;
-}
+@import './styles/global/globals.scss';
+@import './styles/global/variables.scss';
+@import './styles/global/container.scss';
