@@ -1,5 +1,3 @@
 // Globals
 
-@forward '../styles/global/globals.scss';
-@forward '../styles/global/variables.scss';
-@forward '../styles/global/container.scss';
+@use './styles/global/globals.scss';
