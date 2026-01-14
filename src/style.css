@@ -889,6 +889,123 @@ body {
   color: #595C5F;
 }
 
+/* Levels of work */
+
+.levels-of-work {
+  position: relative;
+  z-index: 1;
+  padding: 90px 0;
+  background-color: #EFF7FF;
+  /* background-color: plum; */
+}
+
+.levels-of-work__bg-container {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.levels-of-work__bg-img-left {
+  width: 565px;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  left: -140px;
+  bottom: -357px;
+  transform: rotate(338deg);
+  transition: opacity var(--transition-value) !important;
+}
+
+.levels-of-work__bg-img-right {
+  position: absolute;
+  right: -216px;
+  bottom: -40px;
+  transform: rotate(338deg) !important;
+  object-fit: contain;
+  transition: opacity var(--transition-value) !important;
+}
+
+.levels-of-work__title {
+  max-width: 762px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--primary-font);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.4;
+  color: #35393D;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.levels-of-work__list {
+  display: flex;
+  gap: 20px;
+}
+
+.levels-of-work__item {
+  position: relative;
+  display: flex;
+  flex: 1 1 calc((100% - 80px) / 5);
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 7px 28px 0 rgba(0, 0, 0, 0.07);
+}
+
+.levels-of-work__number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #2A5961;
+  font-weight: 800;
+  position: absolute;
+  right: 24px;
+  top: 0;
+  transform: translatey(-50%);
+  background-image: url("../icons/solution-star.svg");
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.levels-of-work__item-img {
+  flex-shrink: 0;
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.levels-of-work__item-text {
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: 15px;
+  line-height: 1.54;
+  color: #444B52;
+}
+
+.levels-of-work__subtitle {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 165%;
+  text-align: center;
+  color: var(--accent-blue);
+}
+
 /* Footer */
 
 .footer {
