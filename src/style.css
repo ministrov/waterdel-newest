@@ -812,6 +812,27 @@ body {
   background-position: center center;
 }
 
+.stat__title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.11;
+  color: #5A5E62;
+}
+
+.stat__value {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.24;
+  color: var(--accent-blue);
+}
+
+/* Advantages */
+
+.advantages {
+  background-color: peru;
+}
+
 /* Footer */
 
 .footer {
