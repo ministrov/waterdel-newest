@@ -1636,6 +1636,28 @@ body {
   color: #575A60;
 }
 
+/* Faq */
+
+.faq {
+  overflow: hidden;
+  padding: 90px 0;
+  background-color: powderblue;
+}
+
+.faq__title {
+  margin: 0;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--primary-font);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.4;
+  color: #35393D;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Footer */
 
 .footer {
