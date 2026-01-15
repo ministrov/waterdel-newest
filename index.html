@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Onest:wght@100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="/src/style.css">
   <title>WATER Delivery newest</title>
 </head>
@@ -700,7 +701,7 @@
     </section>
 
     <section id="reviews" class="page__reviews reviews">
-      <div class="container">
+      <div class="contaner">
         <h2 class="reviews__title">Что говорят наши клиенты?</h2>
       </div>
 
@@ -766,44 +767,10 @@
             <p class="review__text">Отличное решение для семьи! Фильтрация действительно на уровне — даже чай и кофе
               стали вкуснее. Понравилось, что обслуживание простое, а расходники всегда можно заказать заранее.</p>
           </div>
-          <div class="reviews-slider__review review swiper-slide">
-            <div class="review__review-author review-author">
-              <span class="review-author__image">
-                <img src="img/review-avatar-2.png" width="60" height="60" alt="">
-              </span>
-              <div class="review-author__info">
-                <p class="review-author__info-name">Мария Л., Москва</p>
-              </div>
-            </div>
-            <p class="review__text">Долго выбирали систему, остановились на этой и не пожалели. Монтаж занял меньше
-              часа, вода чистая и мягкая, разница чувствуется сразу. Теперь вся семья пьёт воду прямо из-под крана.</p>
-          </div>
-          <div class="reviews-slider__review review swiper-slide">
-            <div class="review__review-author review-author">
-              <span class="review-author__image">
-                <img src="img/review-avatar-1.png" width="60" height="60" alt="">
-              </span>
-              <div class="review-author__info">
-                <p class="review-author__info-name">Александр Б., Одинцово</p>
-              </div>
-            </div>
-            <p class="review__text">Отличное решение для семьи! Фильтрация действительно на уровне — даже чай и кофе
-              стали вкуснее. Понравилось, что обслуживание простое, а расходники всегда можно заказать заранее.</p>
-          </div>
-          <div class="reviews-slider__review review swiper-slide">
-            <div class="review__review-author review-author">
-              <span class="review-author__image">
-                <img src="img/review-avatar-2.png" width="60" height="60" alt="">
-              </span>
-              <div class="review-author__info">
-                <p class="review-author__info-name">Мария Л., Москва</p>
-                <span class="review-author__info-date">14 Апреля 2025</span>
-              </div>
-            </div>
-            <p class="review__text">Долго выбирали систему, остановились на этой и не пожалели. Монтаж занял меньше
-              часа, вода чистая и мягкая, разница чувствуется сразу. Теперь вся семья пьёт воду прямо из-под крана.</p>
-          </div>
         </div>
+      </div>
+
+      <div class="reviews__navigation-wrapper container">
         <div class="swiper-navigation reviews-slider__navigation navigation">
           <button class="navigation__button navigation__button--prev" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
@@ -1060,6 +1027,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
   <script type="module" src="/src/main.js"></script>
 </body>
