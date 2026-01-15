@@ -66,6 +66,10 @@ body {
   overflow: hidden;
 }
 
+.highlighted {
+  color: var(--accent-blue);
+}
+
 .button {
   display: inline-block;
   justify-content: center;
@@ -728,10 +732,6 @@ body {
   color: #35393D;
 }
 
-.solution__title-highlighted {
-  color: var(--accent-blue);
-}
-
 .solution__subtitle {
   margin: 0;
   font-size: 18px;
@@ -846,10 +846,6 @@ body {
   color: #35393D;
   text-align: center;
   text-transform: uppercase;
-}
-
-.advantages__title-highlighted {
-  color: var(--accent-blue);
 }
 
 .advantages__list {
@@ -1043,10 +1039,6 @@ body {
   color: #35393D;
   text-align: center;
   text-transform: uppercase;
-}
-
-.components__title-highlighted {
-  color: var(--accent-blue);
 }
 
 .components__subtitle {
@@ -1302,6 +1294,38 @@ body {
 
 .steps-section__icon:last-child::after {
   background-image: url("../icons/check.svg");
+}
+
+/* Difference */
+
+.difference {
+  background-color: peru;
+}
+
+.difference__header {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 90px 0 98px;
+  background-color: #074987;
+}
+
+.difference__title {
+  max-width: 762px;
+  margin: 0 auto !important;
+  font-family: var(--primary-font);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.4;
+  /* color: #35393D; */
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.difference__title .highlighted {
+  white-space: nowrap;
+  color: #90E8F8;
 }
 
 /* Footer */
