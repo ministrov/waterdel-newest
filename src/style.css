@@ -1935,3 +1935,226 @@ body {
 .footer__privacy {
   color: #A7A8A9;
 }
+
+/* Popup */
+.popup.open {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(5, 14, 23, 0.50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all var(--transition-value);
+}
+
+.popup__inner {
+  overflow-y: auto;
+  width: 100%;
+  max-width: 734px;
+  padding-top: 50px;
+  scrollbar-width: none;
+}
+
+.popup__border {
+  padding: 10px;
+  border-radius: 33px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.modal {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  gap: 33px;
+  padding: 85px 35px 35px;
+  border-radius: 25px;
+  background: radial-gradient(119.77% 126.3% at 95.67% 0%, #1A6FBE 0%, #0A4B88 100%);
+}
+
+.modal__timer {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  max-width: 290px;
+  max-height: 95px;
+  padding: 20px 25px 12px 25px;
+  color: white;
+  border-radius: 25px;
+  background: rgba(14, 69, 122, 1);
+  backdrop-filter: blur(5.5px);
+  transform: translateX(-50%);
+}
+
+.modal__timer-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: max-content;
+  padding: 11px 13px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #2A5961;
+  background: #90E8F8;
+  border-radius: 900px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal__timer .digit {
+  font-size: 36px;
+  height: 50px;
+}
+
+.modal__timer .separator {
+  line-height: 50px;
+}
+
+.modal__timer .separator {
+  font-size: 36px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  width: 47px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  border-radius: 900px;
+  background: rgba(240, 243, 246, 0.07);
+  cursor: pointer;
+  transition: opacity var(--transition-value);
+}
+
+.modal__header {
+  text-align: center;
+}
+
+.modal__header-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+  font-size: 31px;
+  font-weight: 900;
+  line-height: 139%;
+  text-transform: uppercase;
+  color: white;
+}
+
+.modal__header-title .highlighted {
+  color: #90E8F8;
+}
+
+.modal-promo {
+  position: relative;
+  display: inline-block;
+  padding: 8px 13px 8px 42px;
+  font-family: var(--primary-font);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  border-radius: 900px;
+  background: linear-gradient(86deg, #EABC59 -17.83%, #FA511E 138.95%);
+  color: white;
+}
+
+.modal-promo__fire {
+  position: absolute;
+  max-width: none;
+  max-height: none;
+  width: 35px;
+  height: 47px;
+  object-fit: contain;
+  object-position: center;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.steps__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.steps__item {
+  flex: 1 1 calc((100% - 25px) / 2);
+  display: flex;
+  gap: 7px;
+}
+
+.steps__item-counter {
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 154%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2A5961;
+  width: 34px;
+  height: 34px;
+  background-image: url("../icons/solution-star.svg");
+  background-size: 100% 100%;
+}
+
+.steps__item-text {
+  margin: 0;
+  color: white;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 139%;
+}
+
+.steps__item-text .highlighted {
+  color: #90E8F8;
+}
+
+.modal__form-btn-wrapper {
+  width: 100%;
+  max-width: 330px;
+  margin: auto;
+  padding: 8px;
+  border-radius: 900px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.modal__form-btn {
+  width: 100%;
+}
+
+.modal__form .form__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.modal__form .form__label-wrapper {
+  flex-grow: 1;
+}
+
+.modal__form .form__acceptence {
+  margin: 0;
+}

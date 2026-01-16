@@ -1029,164 +1029,173 @@
     </div>
   </footer>
 
-  <div id="callback" class="page__popup popup">
-    <div class="popup__border">
-      <div class="popup__modal modal">
-        <div class="modal__close">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M5 5L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </div>
-        <div class="modal__timer timer countdown-timer">
-          <span class="modal__timer-title">До конца акции осталось:</span>
-          <div class="time-section">
-            <div class="flip-container">
-              <div class="flip-card days-tens">
-                <div class="flip-card-inner">
-                  <div class="digit">0</div>
+  <div id="callback" class="page__popup popup open">
+    <div class="popup__inner">
+      <div class="popup__border">
+        <div class="popup__modal modal">
+          <button class="modal__close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+              <path d="M5 5L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+          </button>
+          <div class="modal__timer timer countdown-timer">
+            <span class="modal__timer-title">До конца акции осталось:</span>
+            <div class="time-section">
+              <div class="flip-container">
+                <div class="flip-card days-tens">
+                  <div class="flip-card-inner">
+                    <div class="digit">0</div>
+                  </div>
+                </div>
+                <div class="flip-card days-ones">
+                  <div class="flip-card-inner">
+                    <div class="digit">0</div>
+                  </div>
                 </div>
               </div>
-              <div class="flip-card days-ones">
-                <div class="flip-card-inner">
-                  <div class="digit">0</div>
-                </div>
-              </div>
+              <div class="timer__label">дней</div>
             </div>
-            <div class="timer__label">дней</div>
-          </div>
 
-          <div class="separator">:</div>
+            <div class="separator">:</div>
 
-          <div class="time-section">
-            <div class="flip-container">
-              <div class="flip-card hours-tens">
-                <div class="flip-card-inner">
-                  <div class="digit">1</div>
+            <div class="time-section">
+              <div class="flip-container">
+                <div class="flip-card hours-tens">
+                  <div class="flip-card-inner">
+                    <div class="digit">1</div>
+                  </div>
+                </div>
+                <div class="flip-card hours-ones">
+                  <div class="flip-card-inner">
+                    <div class="digit">0</div>
+                  </div>
                 </div>
               </div>
-              <div class="flip-card hours-ones">
-                <div class="flip-card-inner">
-                  <div class="digit">0</div>
-                </div>
-              </div>
+              <div class="timer__label">часов</div>
             </div>
-            <div class="timer__label">часов</div>
-          </div>
 
-          <div class="separator">:</div>
+            <div class="separator">:</div>
 
-          <div class="time-section">
-            <div class="flip-container">
-              <div class="flip-card minutes-tens">
-                <div class="flip-card-inner">
-                  <div class="digit">3</div>
+            <div class="time-section">
+              <div class="flip-container">
+                <div class="flip-card minutes-tens">
+                  <div class="flip-card-inner">
+                    <div class="digit">3</div>
+                  </div>
+                </div>
+                <div class="flip-card minutes-ones">
+                  <div class="flip-card-inner">
+                    <div class="digit">9</div>
+                  </div>
                 </div>
               </div>
-              <div class="flip-card minutes-ones">
-                <div class="flip-card-inner">
-                  <div class="digit">9</div>
-                </div>
-              </div>
+              <div class="timer__label">минут</div>
             </div>
-            <div class="timer__label">минут</div>
-          </div>
 
-          <div class="separator">:</div>
+            <div class="separator">:</div>
 
-          <div class="time-section">
-            <div class="flip-container">
-              <div class="flip-card seconds-tens">
-                <div class="flip-card-inner">
-                  <div class="digit">5</div>
+            <div class="time-section">
+              <div class="flip-container">
+                <div class="flip-card seconds-tens">
+                  <div class="flip-card-inner">
+                    <div class="digit">5</div>
+                  </div>
+                </div>
+                <div class="flip-card seconds-ones rolling">
+                  <div class="flip-card-inner">
+                    <div class="digit">0</div>
+                    <div class="digit">1</div>
+                  </div>
                 </div>
               </div>
-              <div class="flip-card seconds-ones rolling">
-                <div class="flip-card-inner">
-                  <div class="digit">0</div>
-                  <div class="digit">1</div>
-                </div>
-              </div>
+              <div class="timer__label">секунд</div>
             </div>
-            <div class="timer__label">секунд</div>
           </div>
-        </div>
-        <div class="modal__header">
-          <h2 class="modal__header-title">4 <span class="highlighted"> шага</span> установки <br> <span
-              class="highlighted">фильтров</span> под мойку</h2>
-          <div class="modal__promo modal-promo">
-            <img src="icons/fire.svg" width="35" height="47" alt="">
-            Установка -50%
+          <div class="modal__header">
+            <h2 class="modal__header-title">4 <span class="highlighted"> шага</span> установки <br> <span
+                class="highlighted">фильтров</span> под мойку</h2>
+            <div class="modal__promo modal-promo">
+              <img class="modal-promo__fire" src="icons/fire.svg" width="35" height="47" alt="">
+              Установка -50%
+            </div>
           </div>
-        </div>
-        <div class="modal__steps steps">
-          <ul class="steps__list">
-            <li class="steps__item">
-              <span class="steps__item-counter">1.</span>
-              <p class="steps__items-text">Наш консультат <span class="highlighted">подберёт</span> оптимальный вариант
-              </p>
-            </li>
-            <li class="steps__item">
-              <span class="steps__item-counter">2.</span>
-              <p class="steps__item-text">Наш замерщик <span class="highlighted">бесплатно</span> приедет в удобное
-                время</p>
-            </li>
-            <li class="steps__item">
-              <span class="steps__item-counter">3.</span>
-              <p class="steps__item-text">Мы устанавливаем <span class="highlighted">систему фильтрации</span> "Под
-                ключ"</p>
-            </li>
-            <li class="steps__item">
-              <span class="steps__item-counter">4.</span>
-              <p class="steps__item-text">У Вас постоянный источник <span class="highlighted">чистейшей воде</span></p>
-            </li>
-          </ul>
-        </div>
-        <div class="modal__form form">
-          <form class="form__box" action="#">
-            <div class="form__label-wrapper">
-              <label class="form__label">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
-                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
-                    d="M15.8 17.5a5.2 5.2 0 1 0-10.6 0"></path>
-                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
-                    d="M10.5 12.3a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"></path>
-                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
-                    d="M10.5 19.3a8.7 8.7 0 1 0 0-17.5 8.7 8.7 0 0 0 0 17.4Z"></path>
-                </svg>
-                <input class="form__input" type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
+          <div class="modal__steps steps">
+            <ul class="steps__list">
+              <li class="steps__item">
+                <span class="steps__item-counter">1.</span>
+                <p class="steps__item-text">Наш консультат <span class="highlighted">подберёт</span> оптимальный
+                  вариант
+                </p>
+              </li>
+              <li class="steps__item">
+                <span class="steps__item-counter">2.</span>
+                <p class="steps__item-text">Наш замерщик <span class="highlighted">бесплатно</span> приедет в удобное
+                  время</p>
+              </li>
+              <li class="steps__item">
+                <span class="steps__item-counter">3.</span>
+                <p class="steps__item-text">Мы устанавливаем <span class="highlighted">систему фильтрации</span> "Под
+                  ключ"</p>
+              </li>
+              <li class="steps__item">
+                <span class="steps__item-counter">4.</span>
+                <p class="steps__item-text">У Вас постоянный источник <span class="highlighted">чистейшей воде</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="modal__form form">
+            <form class="form__box" action="#">
+              <div class="form__label-wrapper">
+                <label class="form__label">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                      d="M15.8 17.5a5.2 5.2 0 1 0-10.6 0"></path>
+                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                      d="M10.5 12.3a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"></path>
+                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                      d="M10.5 19.3a8.7 8.7 0 1 0 0-17.5 8.7 8.7 0 0 0 0 17.4Z"></path>
+                  </svg>
+                  <input class="form__input" type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
+                </label>
+
+                <label class="form__label">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                      d="M12.1 14.5a.9.9 0 0 0 1-.3l.4-.4a1.8 1.8 0 0 1 1.4-.7h2.6a1.7 1.7 0 0 1 1.8 1.8v2.6a1.7 1.7 0 0 1-1.8 1.8A15.7 15.7 0 0 1 1.7 3.4a1.7 1.7 0 0 1 1.8-1.8h2.6A1.7 1.7 0 0 1 8 3.5v2.6a1.7 1.7 0 0 1-.7 1.4l-.4.3A.9.9 0 0 0 6.5 9c1.2 2.4 3.2 4.4 5.6 5.6Z">
+                    </path>
+                  </svg>
+                  <input class="form__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __"
+                    autocomplete="off" required>
+                </label>
+              </div>
+
+              <label class="form__acceptence">
+                <input class="form__input" type="checkbox" name="acceptence" value="checkbox" checked required>
+                <span class="form__acceptence-text">Я даю <a class="form__acceptence-link"
+                    href="https://waterdel.store/privacy-policy/" target="_blank">согласие на обработку</a> моих
+                  персональных данных в соответствии с <a class="form__acceptence-link"
+                    href="https://waterdel.store/privacy-policy/" target="_blank">Политикой
+                    конфиденциальности</a></span>
               </label>
 
-              <label class="form__label">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
-                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
-                    d="M12.1 14.5a.9.9 0 0 0 1-.3l.4-.4a1.8 1.8 0 0 1 1.4-.7h2.6a1.7 1.7 0 0 1 1.8 1.8v2.6a1.7 1.7 0 0 1-1.8 1.8A15.7 15.7 0 0 1 1.7 3.4a1.7 1.7 0 0 1 1.8-1.8h2.6A1.7 1.7 0 0 1 8 3.5v2.6a1.7 1.7 0 0 1-.7 1.4l-.4.3A.9.9 0 0 0 6.5 9c1.2 2.4 3.2 4.4 5.6 5.6Z">
-                  </path>
-                </svg>
-                <input class="form__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __"
-                  autocomplete="off" required>
-              </label>
-            </div>
-
-            <label class="form__acceptence">
-              <input class="form__input" type="checkbox" name="acceptence" value="checkbox" checked required>
-              <span class="form__acceptence-text">Я даю <a class="form__acceptence-link"
-                  href="https://waterdel.store/privacy-policy/" target="_blank">согласие на обработку</a> моих
-                персональных данных в соответствии с <a class="form__acceptence-link"
-                  href="https://waterdel.store/privacy-policy/" target="_blank">Политикой
-                  конфиденциальности</a></span>
-            </label>
-
-            <button class="modal__form-btn button button--secondary">Заказать установку</button>
+              <div class="modal__form-btn-wrapper">
+                <button class="modal__form-btn button button--secondary">Заказать установку</button>
+              </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
