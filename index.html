@@ -926,6 +926,7 @@
     </div>
 
     <section id="block-request" class="request">
+      <img class="request__bg" src="img/hiw-particles.webp" width="564" height="564" alt="">
       <div class="container container--wrapper">
         <div class="request__content">
           <h2 class="request__title">Готовы пить <span class="highlighted">чистейшую воду</span> без лишних хлопот и
@@ -934,7 +935,7 @@
 
           <div class="request__form form">
             <form class="form__box" action="#">
-              <div class="form__field">
+              <div class="form__label-wrapper">
                 <label class="form__label">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
                     <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
@@ -946,9 +947,7 @@
                   </svg>
                   <input class="form__input" type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
                 </label>
-              </div>
 
-              <div class="form__field">
                 <label class="form__label">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
                     <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
@@ -958,14 +957,15 @@
                   <input class="form__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __"
                     autocomplete="off" required>
                 </label>
-              </div>
 
-              <button class="form__btn btn btn--accent">Заказать установку</button>
+                <button class="form__btn button button--secondary">Заказать установку</button>
+              </div>
 
               <label class="form__acceptence">
                 <input class="form__input" type="checkbox" name="acceptence" value="checkbox" checked required>
-                <span class="form__acceptence-text">Я даю <a href="https://waterdel.store/privacy-policy/"
-                    target="_blank">согласие на обработку</a> моих персональных данных в соответствии с <a
+                <span class="form__acceptence-text">Я даю <a class="form__acceptence-link"
+                    href="https://waterdel.store/privacy-policy/" target="_blank">согласие на обработку</a> моих
+                  персональных данных в соответствии с <a class="form__acceptence-link"
                     href="https://waterdel.store/privacy-policy/" target="_blank">Политикой
                     конфиденциальности</a></span>
               </label>

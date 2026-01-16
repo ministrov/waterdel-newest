@@ -1710,6 +1710,19 @@ body {
   background-color: var(--accent-blue);
 }
 
+.request__bg {
+  position: absolute;
+  z-index: -1;
+  left: -231px;
+  bottom: -260px;
+  width: 564px;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  transform: rotate(346deg);
+}
+
 .container--wrapper {
   display: flex;
 }
@@ -1763,6 +1776,101 @@ body {
   max-width: none;
   max-height: none;
   object-fit: contain;
+}
+
+.form__label-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  padding: 21px 20px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 100vmax;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  transition: all var(--transition-value);
+}
+
+.form__input {
+  flex-grow: 1;
+  max-width: none;
+  font-family: var(--secondary-font);
+  border: none;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+}
+
+.form__btn {
+  font-size: 16px;
+  padding: 21px 32px;
+}
+
+.form__acceptence {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  color: #92AFCA;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.form-timer-block {
+  z-index: 2;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-timer {
+  position: absolute;
+  z-index: 3;
+  top: -15px;
+  left: calc(60% - 45px);
+  padding: 30px 25px 25px 25px;
+  border-radius: 27px;
+  background: linear-gradient(116deg, rgba(14, 8, 23, 0.59) -0.98%, rgba(8, 8, 28, 0.59) 95.36%);
+  box-shadow: 109px 206px 65px 0 rgba(0, 0, 0, 0.00), 70px 132px 60px 0 rgba(0, 0, 0, 0.01), 39px 74px 50px 0 rgba(0, 0, 0, 0.03), 17px 33px 37px 0 rgba(0, 0, 0, 0.04), 4px 8px 20px 0 rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(14.5px);
+  color: white;
+}
+
+.form-timer__title {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 12px 14px;
+  border-radius: 100vmax;
+  background-color: #9AEAF8;
+  color: #1D5862;
+  position: absolute;
+  left: 25px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.form-timer .flip-card::before,
+.form-timer .flip-card::after {
+  display: none;
+}
+
+.form__acceptence-link {
+  color: #92AFCA;
+}
+
+.form__acceptence-link:hover {
+  color: var(--accent-green);
 }
 
 /* Footer */
