@@ -2292,6 +2292,10 @@ body {
     gap: 40px;
   }
 
+  .hero__image-container {
+    left: 30%;
+  }
+
   .hero__left {
     width: 520px;
   }
@@ -2308,7 +2312,26 @@ body {
     font-size: 32px;
   }
 
-  /* .hero__text {} */
+  .problems__list {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .problems__item {
+    flex: 1 1 calc((100% - 80px) / 4);
+  }
+
+  .levels-of-work__list {
+    flex-wrap: wrap;
+  }
+
+  .levels-of-work__item {
+    flex: 1 1 calc((100% - 40px) / 4);
+  }
+
+  .components__title {
+    font-size: 34px;
+  }
 }
 
 /* @media screen and (max-width: 1248px) {} */
