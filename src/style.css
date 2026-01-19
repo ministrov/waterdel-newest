@@ -1851,14 +1851,6 @@ body {
   transition: all var(--transition-value);
 }
 
-.form__label:focus-within {
-  border-color: white;
-}
-
-.form__label:focus-within .form__input::placeholder {
-  color: white;
-}
-
 .form__input {
   flex-grow: 1;
   max-width: none;
@@ -1874,6 +1866,14 @@ body {
 
 .form__input::placeholder {
   color: rgba(255, 255, 255, 0.46);
+}
+
+.form__label:focus-within {
+  border-color: white;
+}
+
+.form__label:focus-within .form__input::placeholder {
+  color: white;
 }
 
 .form__btn {
