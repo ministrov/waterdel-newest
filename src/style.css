@@ -2282,3 +2282,43 @@ body {
 .modal__form .form__acceptence {
   margin: 0;
 }
+
+@media screen and (max-width: 1448px) {
+  :root {
+    --container-width: 1200px;
+  }
+
+  .header__content {
+    gap: 40px;
+  }
+
+  .hero__left {
+    width: 520px;
+  }
+
+  .hero__title {
+    font-size: 44px;
+  }
+
+  .hero__title::before {
+    content: none;
+  }
+
+  .hero__subtitle {
+    font-size: 32px;
+  }
+
+  /* .hero__text {} */
+}
+
+/* @media screen and (max-width: 1248px) {} */
+
+/* @media screen and (max-width: 992px) {} */
+
+/* @media screen and (max-width: 768px) {} */
+
+/* @media screen and (min-width: 681px) and (max-width: 767px) {} */
+
+/* @media screen and (max-width: 680px) {} */
+
+/* @media screen and (max-width: 580px) {} */
