@@ -1074,11 +1074,6 @@ body {
 
 /* Components */
 
-/* .components {
-  padding-top: 90px;
-  padding-bottom: 60px;
-} */
-
 .components .container--wrapper {
   padding-top: 90px;
   padding-bottom: 60px;
@@ -1190,7 +1185,6 @@ body {
   width: calc(100% + 6px);
   height: 100%;
   min-height: 100%;
-  /* min-height: 350px; */
   display: flex;
   flex-direction: column;
   z-index: 1000;
@@ -1429,7 +1423,6 @@ body {
 
 .difference {
   padding-bottom: 90px;
-  /* background-color: peru; */
 }
 
 .difference__header {
@@ -2317,13 +2310,33 @@ body {
     font-size: 32px;
   }
 
+  .problems__title {
+    font-size: 34px;
+  }
+
   .problems__list {
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
 
+  .problems__item::before {
+    width: 39px;
+    height: 39px;
+    top: -16px;
+    transform: translateY(0);
+    right: 22px;
+  }
+
   .problems__item {
     flex: 1 1 calc((100% - 80px) / 4);
+  }
+
+  .advantages__title {
+    font-size: 34px;
+  }
+
+  .levels-of-work__title {
+    font-size: 34px;
   }
 
   .levels-of-work__list {
@@ -2464,6 +2477,34 @@ body {
 
   .hero__scroll-circle {
     width: 120px;
+  }
+
+  .solution__content {
+    width: 41%;
+  }
+
+  .solution__title {
+    font-size: 27px;
+  }
+
+  .whom__item {
+    flex: 1 1 calc((100% - 20px) / 3);
+  }
+
+  .card__item-name {
+    position: static;
+    margin-bottom: 2px;
+    font-size: 15px;
+    line-height: 1.54;
+    border: none;
+  }
+
+  .card--second .card__item-name {
+    display: block;
+  }
+
+  .difference__card.card--first {
+    margin: 0;
   }
 }
 
