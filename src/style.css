@@ -1278,7 +1278,7 @@ body {
 .whom__item {
   display: flex;
   flex-direction: column;
-  flex: 1 1 calc((85% - 40px) / 3);
+  flex: 1 1 calc((100% - 40px) / 4);
   gap: 10px;
   padding: 20px;
   border-radius: 16px;
@@ -2336,6 +2336,34 @@ body {
 
   .components__title {
     font-size: 34px;
+  }
+
+  .whom__title {
+    font-size: 34px;
+  }
+
+  .steps-section__title {
+    font-size: 34px;
+  }
+
+  .difference__title {
+    font-size: 34px;
+  }
+
+  .reviews__title {
+    font-size: 34px;
+  }
+
+  .faq__title {
+    font-size: 34px;
+  }
+
+  .request__title {
+    font-size: 34px;
+  }
+
+  .form__btn {
+    width: calc(50% - 7.5px);
   }
 }
 
