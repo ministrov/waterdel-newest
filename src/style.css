@@ -2367,7 +2367,23 @@ body {
   }
 }
 
-/* @media screen and (max-width: 1248px) {} */
+@media screen and (max-width: 1248px) {
+  .header__content {
+    gap: 20px;
+  }
+
+  .header__logo {
+    max-width: 120px;
+  }
+
+  .header-phone__value {
+    font-size: 16px;
+  }
+
+  .header__btn {
+    display: none;
+  }
+}
 
 /* @media screen and (max-width: 992px) {} */
 
