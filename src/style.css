@@ -41,7 +41,6 @@ body {
   min-width: 320px;
   margin: 0;
   font-family: var(--secondary-font);
-  font-size: 15px;
   background-color: white;
   color: #303437;
 }
@@ -3046,6 +3045,33 @@ body {
 
   .reviews-slider__navigation {
     margin-top: 20px;
+  }
+
+  .faq {
+    padding: 60px 0 100px;
+  }
+
+  .faq__title {
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+
+  .faq__question {
+    max-height: 53px;
+  }
+
+  .faq__question-top {
+    padding: 15px 14px;
+    border-radius: 12px;
+  }
+
+  .faq__question-text {
+    font-size: 14px;
+  }
+
+  .faq__question-answer {
+    font-size: 14px;
+    padding: 10px 14px;
   }
 }
 
