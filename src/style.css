@@ -1183,7 +1183,7 @@ body {
   margin: 0 auto;
 }
 
-.components__btn .components__btn--laptop {
+.components__btn.components__btn--laptop {
   display: none;
 }
 
@@ -1257,6 +1257,8 @@ body {
 
 .whom__container {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .whom__title {
@@ -1268,6 +1270,7 @@ body {
   font-size: 38px;
   font-weight: 900;
   line-height: 1.4;
+  text-align: start;
   color: #35393D;
   text-transform: uppercase;
 }
@@ -2826,6 +2829,54 @@ body {
     display: inline-flex;
     max-width: 332px;
     white-space: nowrap;
+  }
+
+  .whom {
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+  }
+
+  .whom__content {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  .whom__title {
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+
+  .whom__br {
+    display: none;
+  }
+
+  .whom__list {
+    gap: 14px;
+  }
+
+  .whom__item {
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .whom__item:nth-last-child(2),
+  .whom__item:last-child {
+    flex-basis: 100%;
+    /* width: calc(50% - 7px); */
+  }
+
+  .whom__image {
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+    margin-right: 0;
+    z-index: -1;
+    height: 295px;
+    max-width: none;
+    width: calc(50% - 35px);
+    object-fit: cover;
+    object-position: top;
   }
 }
 
