@@ -3177,15 +3177,37 @@ body {
     justify-content: space-between;
     width: 100%;
   }
-
-  /* .footer__logo {
-    width: 100%;
-    text-align: center;
-    order: 1;
-  } */
 }
 
-/* @media screen and (max-width: 768px) {} */
+@media screen and (max-width: 768px) {
+  :root {
+    --container-padding: 14px;
+  }
+
+  .header__logo {
+    max-width: 96px;
+  }
+
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 360px;
+  }
+
+  .hero__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__left {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .hero__text {
+    margin-right: 0;
+  }
+}
 
 /* @media screen and (min-width: 681px) and (max-width: 767px) {} */
 
