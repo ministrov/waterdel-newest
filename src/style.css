@@ -2663,6 +2663,7 @@ body {
 
   .solution__footer {
     display: none;
+    border-width: 2px;
   }
 
   .solution__footer.solution__footer--tablet {
@@ -2693,6 +2694,35 @@ body {
   }
 
   .stat__value {
+    font-size: 13px;
+  }
+
+  .advantages {
+    padding: 60px 0;
+  }
+
+  .advantages__title {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .advantages__list {
+    gap: 15px;
+  }
+
+  .advantages__item {
+    flex: 1 1 calc((100% - 15px) / 2);
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 10px;
+  }
+
+  .advantages__item-img {
+    width: 34px;
+  }
+
+  .advantages__item-subtitle {
+    margin-bottom: 2px;
     font-size: 13px;
   }
 }
