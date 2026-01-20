@@ -2608,6 +2608,34 @@ body {
     right: 0;
     left: auto;
   }
+
+  .problems {
+    padding-top: 60px;
+  }
+
+  .problems__title {
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+
+  .problems__list {
+    gap: 18px;
+  }
+
+  .problems__item {
+    flex: 1 1 calc((100% - 46px) / 3);
+    padding: 16px;
+  }
+
+  .problems__item-img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .problems__text {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
 }
 
 /* @media screen and (max-width: 768px) {} */
