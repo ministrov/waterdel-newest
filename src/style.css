@@ -826,6 +826,10 @@ body {
   border: 4px solid #90E8F8;
 }
 
+.solution__footer.solution__footer--tablet {
+  display: none;
+}
+
 .solution__footer-text {
   margin: 0;
   font-size: 15px;
@@ -2479,6 +2483,10 @@ body {
     width: 120px;
   }
 
+  .solution__wrapper {
+    gap: 18px;
+  }
+
   .solution__content {
     width: 41%;
   }
@@ -2635,6 +2643,57 @@ body {
   .problems__text {
     margin-bottom: 5px;
     font-size: 16px;
+  }
+
+  .solution {
+    padding: 60px 0;
+  }
+
+  .solution__title {
+    font-size: 19px;
+  }
+
+  .solution__subtitle {
+    font-size: 15px;
+  }
+
+  .solution__text {
+    font-size: 13px;
+  }
+
+  .solution__footer {
+    display: none;
+  }
+
+  .solution__footer.solution__footer--tablet {
+    display: flex;
+    margin-top: 20px;
+    padding: 16px;
+    column-gap: 15px;
+  }
+
+  .solution__footer.solution__footer--tablet .solution__footer-img {
+    width: 43px;
+  }
+
+  .solution__footer.solution__footer--tablet .solution__footer-text {
+    font-size: 14px;
+  }
+
+  .solution__image {
+    flex-shrink: unset;
+  }
+
+  .stats-inner {
+    row-gap: 20px;
+  }
+
+  .stat__title {
+    font-size: 12px;
+  }
+
+  .stat__value {
+    font-size: 13px;
   }
 }
 
