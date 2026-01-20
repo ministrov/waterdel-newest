@@ -1427,7 +1427,7 @@ body {
   background-size: 100% 100%;
 }
 
-.steps-section__icon:last-child::after {
+.steps-section__item:last-child .steps-section__icon::after {
   background-image: url("../icons/check.svg");
 }
 
@@ -2863,7 +2863,6 @@ body {
   .whom__item:nth-last-child(2),
   .whom__item:last-child {
     flex-basis: 100%;
-    /* width: calc(50% - 7px); */
   }
 
   .whom__image {
@@ -2877,6 +2876,50 @@ body {
     width: calc(50% - 35px);
     object-fit: cover;
     object-position: top;
+  }
+
+  .steps-section {
+    padding: 60px 0;
+  }
+
+  .steps-section__title {
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+
+  .steps-section__list {
+    gap: 15px;
+  }
+
+  .steps-section__item {
+    min-height: 263px;
+    padding: 16px;
+    row-gap: 5px;
+  }
+
+  .steps-section__name {
+    padding-right: 40px;
+    font-size: 15px;
+  }
+
+  .steps-section__item-text {
+    padding-right: 30px;
+    font-size: 13px;
+  }
+
+  .steps-section__icon {
+    top: auto;
+    transform: translateY(0);
+    bottom: 0;
+  }
+
+  .steps-section__icon::after {
+    left: 13px;
+  }
+
+  .steps-section__text {
+    margin-top: 20px;
+    font-size: 16px;
   }
 }
 
