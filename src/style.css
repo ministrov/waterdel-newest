@@ -2542,6 +2542,12 @@ body {
   .difference__card.card--first {
     margin-left: 0;
   }
+
+  .reviews__reviews-slider {
+    width: 79%;
+    padding: 0 var(--container-padding);
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -3004,6 +3010,42 @@ body {
     max-width: 187px;
     margin: 15px auto 0 auto;
     padding: 17px 27px;
+  }
+
+  .reviews {
+    padding: 60px 0;
+  }
+
+  .reviews__title {
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+
+  .review-author {
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .review-author__info-name {
+    font-size: 14px;
+  }
+
+  .review-author__image {
+    width: 42px;
+    height: 42px;
+  }
+
+  .review {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .review__text {
+    font-size: 14px;
+  }
+
+  .reviews-slider__navigation {
+    margin-top: 20px;
   }
 }
 
