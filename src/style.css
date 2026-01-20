@@ -1149,6 +1149,7 @@ body {
   border-radius: 20px;
   border: 3px solid #E9EFF5;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .components__item-img {
@@ -1180,6 +1181,10 @@ body {
   display: block;
   width: 530px;
   margin: 0 auto;
+}
+
+.components__btn .components__btn--laptop {
+  display: none;
 }
 
 .comp-card__hover {
@@ -2779,6 +2784,48 @@ body {
 
   .levels-of-work__bg-img-right {
     width: 216px;
+  }
+
+  .components .container--wrapper {
+    row-gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .components__title {
+    margin-bottom: 0;
+    font-size: 23px
+  }
+
+  .components__subtitle {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .components__list {
+    gap: 15px;
+  }
+
+  .components__item {
+    min-height: 220px;
+    flex: 1 1 calc((100% - 15px) / 3);
+    border-width: 2px;
+    padding: 16px;
+  }
+
+  .components__item-img {
+    margin-bottom: 15px;
+  }
+
+  .components__btn {
+    display: none;
+  }
+
+  .components__btn.components__btn--laptop {
+    display: inline-flex;
+    max-width: 332px;
+    white-space: nowrap;
   }
 }
 
