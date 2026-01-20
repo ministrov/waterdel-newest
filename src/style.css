@@ -2540,7 +2540,7 @@ body {
   }
 
   .difference__card.card--first {
-    margin: 0;
+    margin-left: 0;
   }
 }
 
@@ -2922,6 +2922,10 @@ body {
     font-size: 16px;
   }
 
+  .difference {
+    padding-bottom: 60px;
+  }
+
   .difference__header {
     padding: 60px 0 70px;
   }
@@ -2947,6 +2951,59 @@ body {
 
   .difference__header::before {
     content: none;
+  }
+
+  .difference__content {
+    column-gap: 14px;
+    width: max-content;
+    padding-bottom: 5px;
+  }
+
+  .card {
+    padding: 16px;
+    width: 312px;
+    flex-shrink: 0;
+  }
+
+  .card__header-name {
+    font-size: 13px;
+  }
+
+  .card__header-title {
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .card__item {
+    padding: 10px 0;
+  }
+
+  .card__item-price {
+    font-size: 13px;
+  }
+
+  .card__item-name {
+    font-size: 13px;
+  }
+
+  .card__item-rating-img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .card__item-text {
+    font-size: 13px;
+  }
+
+  .difference__btn {
+    display: none;
+  }
+
+  .difference__btn.difference__btn--tablet {
+    display: flex;
+    max-width: 187px;
+    margin: 15px auto 0 auto;
+    padding: 17px 27px;
   }
 }
 
