@@ -2921,6 +2921,33 @@ body {
     margin-top: 20px;
     font-size: 16px;
   }
+
+  .difference__header {
+    padding: 60px 0 70px;
+  }
+
+  .difference__title {
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+
+  .difference__bg--left {
+    bottom: -241px;
+    left: -139px;
+    transform: scaleX(-1) rotate(161deg);
+    width: 330px;
+  }
+
+  .difference__bg--right {
+    width: 350px;
+    right: -116px;
+    top: -205px;
+    transform: rotate(342deg);
+  }
+
+  .difference__header::before {
+    content: none;
+  }
 }
 
 /* @media screen and (max-width: 768px) {} */
