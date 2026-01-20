@@ -3160,6 +3160,29 @@ body {
     width: 26px;
     height: 50px;
   }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    max-width: 102px;
+  }
+
+  .footer__contacts {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* .footer__logo {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  } */
 }
 
 /* @media screen and (max-width: 768px) {} */
