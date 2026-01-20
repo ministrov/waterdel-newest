@@ -1915,6 +1915,10 @@ body {
   cursor: pointer;
 }
 
+.form__acceptence-text {
+  margin: 0;
+}
+
 .fg-checkbox {
   cursor: pointer;
 }
@@ -3072,6 +3076,89 @@ body {
   .faq__question-answer {
     font-size: 14px;
     padding: 10px 14px;
+  }
+
+  .request__content {
+    width: 60%;
+    padding: 60px 0;
+  }
+
+  .request__bg {
+    position: absolute;
+    width: 302px;
+    transform: rotate(342deg);
+    left: auto;
+    bottom: auto;
+    top: 39px;
+    right: -100px;
+  }
+
+  .request__title {
+    margin-bottom: 5px;
+    padding-right: 0;
+    font-size: 23px;
+  }
+
+  .request__text {
+    font-size: 15px;
+  }
+
+  .form {
+    padding-right: 135px;
+  }
+
+  .form__label {
+    padding: 17px 20px;
+  }
+
+  .form__btn {
+    width: 100%;
+  }
+
+  .form__acceptence {
+    align-items: flex-start;
+  }
+
+  .form-timer {
+    left: auto;
+    right: 15px;
+    top: 55px;
+    padding: 23px 16px 18px 16px;
+  }
+
+  .request__image {
+    top: auto;
+    bottom: -45px;
+    left: -125px;
+    width: 192%;
+    max-height: 392px;
+  }
+
+  .request__image-box::before {
+    width: 181%;
+    top: 40%;
+    right: -10%;
+  }
+
+  .form-timer__title {
+    font-size: 13px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: max-content;
+  }
+
+  .form-timer .digit {
+    font-size: 34px;
+    height: 50px;
+  }
+
+  .form-timer .separator {
+    line-height: 50px;
+  }
+
+  .form-timer .flip-card {
+    width: 26px;
+    height: 50px;
   }
 }
 
