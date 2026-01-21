@@ -14,6 +14,17 @@ jQuery(document).ready(function ($) {
     closeMobileMenu();
   });
 
+  // Close mobile menu when clicking on links inside
+  $('#mobile-menu a').on('click', function () {
+    closeMobileMenu();
+  });
+
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('#mobile-menu, #mobile-menu-burger').length) {
+      closeMobileMenu();
+    }
+  });
+
   const reviewsSwiper = new Swiper('.reviews-slider', {
     slidesPerView: 1,
     spaceBetween: 10,
