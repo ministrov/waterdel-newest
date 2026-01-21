@@ -1,4 +1,19 @@
 jQuery(document).ready(function ($) {
+  $('#mobile-menu-burger').on('click', function () {
+    $(this).toggleClass('active');
+    $('#mobile-menu').toggleClass('active');
+    console.log('click');
+  });
+
+  function closeMobileMenu() {
+    $(this).removeClass('active');
+    $('#mobile-menu').removeClass('active');
+  }
+
+  $('.mobile-menu__close').on('click', function () {
+    closeMobileMenu();
+  });
+
   const reviewsSwiper = new Swiper('.reviews-slider', {
     slidesPerView: 1,
     spaceBetween: 10,

@@ -309,17 +309,25 @@ body {
   display: none;
 }
 
-.mobile-menu {
+.header__mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
-  width: 320px;
+  width: 72%;
   height: 100%;
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.header__mobile-menu.active {
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+.mobile-menu {
   background: radial-gradient(119.77% 126.3% at 95.67% 0%, #1A6FBE 0%, #0A4B88 100%);
   border-radius: 0 14px 14px 0;
   padding: 25px;
-  transform: translateX(-100%);
-  pointer-events: none;
   transition: transform var(--transition-value);
 }
 
@@ -332,14 +340,46 @@ body {
   justify-content: center;
   width: 47px;
   height: 40px;
-  border-radius: 900px;
   background: rgba(240, 243, 246, 0.07);
+  border: none;
+  border-radius: 900px;
+  outline: none;
 }
 
 .mobile-menu__logo {
   display: block;
   max-width: 160px;
   margin-bottom: 30px;
+}
+
+.mobile__menu>li {
+  margin-bottom: 15px;
+}
+
+.mobile__menu>li:last-child {
+  margin-bottom: 0;
+}
+
+.mobile__menu>li>a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.header__contacts.mobile__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.mobile__contacts .header-phone__value {
+  display: block;
+}
+
+.mobile__contacts .header__btn {
+  display: block;
+  width: 100%;
 }
 
 .header__content {
