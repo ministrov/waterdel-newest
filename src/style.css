@@ -3424,4 +3424,71 @@ body {
     display: inline-block;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.13);
   }
+
+  .advantages__item {
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 10px;
+    flex-basis: 100%;
+  }
+
+  .levels-of-work__item {
+    flex-basis: 100%;
+  }
+
+  .levels-of-work__bg-img-left {
+    display: block;
+    left: -87px;
+    bottom: -152px;
+    width: 298px;
+  }
+
+  .components__item {
+    flex-basis: 100%;
+  }
+
+  .components__btn.components__btn--laptop {
+    padding: 21px 18px;
+  }
+
+  .whom__container {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .whom__content {
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+
+  .whom__item {
+    flex-basis: 100%;
+    width: 100% !important;
+  }
+
+  .whom__image {
+    position: static;
+    aspect-ratio: 359 / 257;
+    width: calc(100% + 24px);
+    height: auto;
+    margin: 0 -12px;
+  }
+
+  .steps-section__item {
+    flex-basis: 100%;
+    aspect-ratio: 332 / 170;
+    max-width: none;
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .difference__btn.difference__btn--tablet {
+    display: inline-flex;
+    max-width: 100%;
+  }
+
+  .reviews__reviews-slider {
+    width: 84%;
+  }
 }
