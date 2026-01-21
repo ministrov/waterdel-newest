@@ -912,7 +912,7 @@ body {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  font-family: var(--ff-headers);
+  font-family: var(--primary-font);
   font-size: 38px;
   font-weight: 900;
   line-height: 1.4;
@@ -1606,6 +1606,10 @@ body {
   margin-top: 14px;
 }
 
+.difference__btn.difference__btn--tablet {
+  display: none;
+}
+
 /* Reviews */
 
 .reviews {
@@ -1792,7 +1796,7 @@ body {
 
 .request__content {
   flex-shrink: 0;
-  width: 58%;
+  width: 60%;
   padding: 90px 0 60px;
 }
 
@@ -1803,7 +1807,7 @@ body {
   padding-right: 70px;
   margin-left: auto;
   margin-right: auto;
-  font-family: var(--ff-headers);
+  font-family: var(--primary-font);
   font-size: 38px;
   font-weight: 900;
   line-height: 1.4;
@@ -1863,7 +1867,7 @@ body {
 }
 
 .form__label {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   flex-grow: 1;
