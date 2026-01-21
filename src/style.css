@@ -3245,6 +3245,43 @@ body {
     right: 50%;
     transform: translateX(145%);
   }
+
+  .solution__wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+
+  .solution__content {
+    width: auto;
+    min-width: auto;
+  }
+
+  .solution__subtitle {
+    font-size: 16px;
+  }
+
+  .solution__text {
+    font-size: 14px;
+  }
+
+  .solution__footer {
+    display: flex;
+    padding: 16px;
+    column-gap: 15px;
+  }
+
+  .solution__footer-img {
+    width: 43px;
+  }
+
+  .solution__footer-text {
+    font-size: 14px;
+  }
+
+  .solution__footer.solution__footer--tablet {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {
