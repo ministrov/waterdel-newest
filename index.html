@@ -20,7 +20,7 @@
     <div class="container">
       <div class="header__content">
         <div id="mobile-menu-burger" class="header__burger-wrapper header-tablet__aside">
-          <div class="header__burger link-tool">
+          <button class="header__burger link-tool" type="button">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.66666 8H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -31,7 +31,7 @@
                 stroke-linejoin="round">
               </path>
             </svg>
-          </div>
+          </button>
         </div>
 
         <div class="header__logo logo">
@@ -84,12 +84,12 @@
     </div>
 
     <div id="mobile-menu" class="header__mobile-menu mobile-menu">
-      <div id="mobile-menu__close" class="mobile-menu__close">
+      <button id="mobile-menu__close" class="mobile-menu__close" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
           <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 1 1 11M1 1l10 10">
           </path>
         </svg>
-      </div>
+      </button>
       <a href="/" class="mobile-menu__logo">
         <img class="mobile-menu__icon" src="img/logo.webp" width="140" height="52" alt="WATER Delivery logo in focus">
       </a>
@@ -136,7 +136,7 @@
           </span>
           <span class="header-phone__value">+7 495 003 12 22</span>
         </a>
-        <button class="btn btn--white header__btn" data-modal="callback">Заказать звонок</button>
+        <button class="header__btn button button--primary" data-modal="callback">Заказать звонок</button>
       </div>
     </div>
 
