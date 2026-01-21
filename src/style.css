@@ -1733,8 +1733,7 @@ body {
 .faq__question-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
   padding: 20px;
   border-radius: 20px;
   border: 2px solid #E9EFF5;
@@ -3069,7 +3068,7 @@ body {
   }
 
   .faq__question-top {
-    padding: 15px 14px;
+    padding: 13px 14px;
     border-radius: 12px;
   }
 
@@ -3330,6 +3329,10 @@ body {
 
   .steps-section__item {
     flex-basis: calc(50% - 8px);
+  }
+
+  .reviews__reviews-slider {
+    width: 95%;
   }
 }
 
