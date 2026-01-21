@@ -85,3 +85,20 @@ jQuery(document).ready(function ($) {
 
   bindDiffCardEvents();
 });
+
+// Progressbar realisation
+
+const progessBar = document.querySelector('.progressbar');
+const windowHeight =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+console.log(windowHeight);
+
+window.addEventListener('scroll', () => {
+  const windowScroll = window.pageYOffset;
+  const progressBarWidth = (windowScroll / windowHeight).toFixed(2);
+
+  console.log(progressBarWidth);
+
+  progessBar.setAttribute('style', `transform: scaleX(${progressBarWidth})`);
+});
