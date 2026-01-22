@@ -25,6 +25,23 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  // Faq accordion
+
+  $('.faq__question-top').on('click', function () {
+    var self = $(this);
+    var isActive = self.hasClass('open');
+
+    $('.faq__question-top').removeClass('open');
+    $('.faq__question-answer').slideUp(300);
+
+    if (!isActive) {
+      self.addClass('open');
+      self.next().slideDown(300);
+    }
+  });
+
+  // Reviews swiper slider initialisation
+
   const reviewsSwiper = new Swiper('.reviews-slider', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -50,6 +67,8 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+
+  // Components dynamic hovering
 
   function bindDiffCardEvents() {
     var $cards = $('.components__item');
