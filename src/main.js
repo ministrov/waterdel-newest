@@ -52,7 +52,7 @@ jQuery(document).ready(function ($) {
   });
 
   function bindDiffCardEvents() {
-    var $cards = $('.comp-card');
+    var $cards = $('.components__item');
 
     console.log($cards);
 
