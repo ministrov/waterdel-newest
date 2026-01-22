@@ -70,16 +70,14 @@ jQuery(document).ready(function ($) {
   // Components dynamic hovering
 
   function bindDiffCardEvents() {
-    var $cards = $('.components__item');
-
-    console.log($cards);
+    var items = $('.components__item');
 
     // Убираем все предыдущие обработчики, чтобы не дублировались при ресайзе
-    $cards.off('mouseenter mouseleave click');
+    items.off('mouseenter mouseleave click');
 
     if ($(window).width() > 992) {
       // На больших экранах — hover по наведению
-      $cards
+      items
         .on('mouseenter', function () {
           $(this).addClass('hover');
         })
@@ -87,12 +85,12 @@ jQuery(document).ready(function ($) {
           $(this).removeClass('hover');
         });
     } else {
-      $cards.on('click', function (e) {
+      items.on('click', function (e) {
         e.preventDefault();
         var $this = $(this);
 
         if (!$this.hasClass('hover')) {
-          $cards.removeClass('hover');
+          items.removeClass('hover');
           $this.addClass('hover');
         } else {
           $this.removeClass('hover');
