@@ -96,6 +96,8 @@ console.log(windowHeight);
 
 window.addEventListener('scroll', () => {
   const windowScroll = window.pageYOffset;
+
+  console.log(windowScroll);
   const progressBarWidth = (windowScroll / windowHeight).toFixed(2);
 
   console.log(progressBarWidth);
