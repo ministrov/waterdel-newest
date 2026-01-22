@@ -2,7 +2,6 @@ jQuery(document).ready(function ($) {
   $('#mobile-menu-burger').on('click', function () {
     $(this).toggleClass('active');
     $('#mobile-menu').toggleClass('active');
-    console.log('click');
   });
 
   function closeMobileMenu() {
@@ -111,15 +110,9 @@ const progessBar = document.querySelector('.progressbar');
 const windowHeight =
   document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-console.log(windowHeight);
-
 window.addEventListener('scroll', () => {
   const windowScroll = window.pageYOffset;
-
-  console.log(windowScroll);
   const progressBarWidth = (windowScroll / windowHeight).toFixed(2);
-
-  console.log(progressBarWidth);
 
   progessBar.setAttribute('style', `transform: scaleX(${progressBarWidth})`);
 });
