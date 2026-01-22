@@ -1812,8 +1812,16 @@ body {
   transition: background-color var(--transition-value);
 }
 
+.faq__question-top:hover .faq__question-text {
+  color: #074987;
+}
+
 .faq__question-top.open {
   background-color: #E9EFF5;
+}
+
+.faq__question-top.open .faq__question-arrow {
+  transform: rotate(180deg);
 }
 
 .faq__question-text {
