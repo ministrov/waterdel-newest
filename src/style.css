@@ -3646,3 +3646,9 @@ body {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 348px) {
+  .components__btn.components__btn--laptop {
+    font-size: 14px;
+  }
+}
